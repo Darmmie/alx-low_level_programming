@@ -1,8 +1,7 @@
-#include<time.h>
-#include <stdlib.h>
-
+#include<stdlib.h>
+#include <time.h>
 /**
- * main - print if the number is positive, zero,
+ * main - Entry point if the number is positive, zero,
  *
  * Description: using the main function
  * this program prints "programming is positive"
@@ -13,23 +12,15 @@ int main(void)
 	int n;
 
 	srand(time(0));
-		/*random number generation*/
 	n = rand() - RAND_MAX / 2;
 
-		/*this code generate the last digit*/
-       int lastDigit = (n%10);
+	int lastDigit = (n%10);
 
-		/*make your decision here*/
 	if (lastDigit > 5)
-	{
-	printf("Last digit of %d is %d\n\n and is greter than 5", n,lastDigit);
-	}
+		printf("%d and is greter than 5\n", n,lastDigit);
 	else if (lastDigit == 0)
-	{
 		printf("Last digit of %d is %d\n\n and is 0", n,lastDigit);
-	}
 	else if ((lastDigit < 6)&&(lastDigit !=0))
-	{
 		printf("Last digit of %d is %d\n\n and is less than 6", n,lastDigit);
 	}
 	return (0);
