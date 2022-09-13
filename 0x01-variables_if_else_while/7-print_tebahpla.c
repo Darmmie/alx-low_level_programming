@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * 
- * main -Entry point
+ * main - Entry point
  *
  * Return: 0
  */
@@ -15,4 +14,3 @@ int main(void)
 	printf("\n");
 	return (0);
 }
-
