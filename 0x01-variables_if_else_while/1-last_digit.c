@@ -1,5 +1,5 @@
 #include<stdlib.h>
-#include <time.h>
+#include <stdlib.h>
 /**
  * main - Entry point if the number is positive, zero,
  *
@@ -17,11 +17,15 @@ int main(void)
 	int lastDigit = (n%10);
 
 	if (lastDigit > 5)
-		printf("%d and is greter than 5\n", n,lastDigit);
+	{
+		printf("Last digit of %d is %d\n\n and is greater than 5", n,lastDigit);
+	}
 	else if (lastDigit == 0)
+	{
 		printf("Last digit of %d is %d\n\n and is 0", n,lastDigit);
+	}
 	else if ((lastDigit < 6)&&(lastDigit !=0))
-		printf("Last digit of %d is %d\n\n and is less than 6", n,lastDigit);
+	{	printf("Last digit of %d is %d\n\n and is less than 6", n,lastDigit);
 	}
 	return (0);
 }
